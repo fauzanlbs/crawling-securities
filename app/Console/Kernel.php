@@ -23,11 +23,11 @@ class Kernel extends ConsoleKernel
      * @return void
      */
     protected function schedule(Schedule $schedule)
-    {
-        // $schedule->command('inspire')
-        //          ->hourly();
-        $schedule->command('dusk')->everyFiveMinutes();
+    {   
         //$schedule -> exec("php artisan dusk");
+        //$schedule->command('dusk')->everyMinutes();
+        $schedule->command('dusk')->everyFiveMinutes();
+        
     }
 
     /**
